@@ -1,6 +1,7 @@
 Design Decisions (HisaabBook) Project Idea -> Money Tracker and your Hisaab excel sheet Tracker
+Assumption - the app is just for logging
 1. Entities
-    a. Expenses - Amount (int), Category (int), Location (String),
+    a. Expenses - Amount (int), Category (int) or Category(String), Location (String),
                   DateTime (Date and Time), Payment Channel (Int),
                   Remarks (String), AccountId (Int)
     b. Dues - Payee (AccountId), Payer (AccountId), PaymentChannel (Int)
@@ -10,24 +11,31 @@ Design Decisions (HisaabBook) Project Idea -> Money Tracker and your Hisaab exce
     d. User - Name (String), Age (int), UserId (Auto), PhoneNumber (String)
     e. Transactions - Debit (int), Credit(int), Total Amount(int),
                       AccountId, Payment Channel (Int)
+
 2. Enums
-    a. Category
+    //a. Category
     b. Payment Channel
 
 3. APIs
-    1. getCategoryList                      GET
-    2. addCategory                          POST
+    //1. getCategoryList                      GET
+    //2. addCategory                          POST
     3. getPaymentChannelList                GET
-    4. getExpensesByAccount                 Should we GET or POST
-    5. getDuesByAccount                     Should we GET or POST
+    4. getExpensesByAccount                 POST
+    5. getDuesByAccount                     POST
     6. getUserList                          GET
-    7. getAccountByUser                     Should we GET or POST
+    //7. getAccountByUser                     Should we GET or POST
     8. settleDues/param or reqBody ()       POST
-    9. deleteAccountByUser                  DELETE
+    //9. deleteAccountByUser                  DELETE
     10. deleteUser                          DELETE
+    11. addExpense                          POST
+    12. addDue                              POST
+    13. addAmount                           POST
+    14. createUserAccount                   POST
+    15. getAccountDetails                   POST
+    16.
 
 Features to be implemented :
 1. Track expense and dues
-2. Settle dues either by -> First in first out or Earliest repayment date first
+2. Settle dues either by -> First in first out or Earliest repayment date first // Strategy Pattern
 
 Database -> H2 in memory or MySQL or CSV files so that they can be loaded to Excel sheet too
