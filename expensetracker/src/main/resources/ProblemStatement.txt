@@ -1,0 +1,18 @@
+Build a web service to track the expenses, dues, and settlements for college-going students.
+Requirements:
+1. As a user, I should be able to record an expense with details such as
+    a. why was the expense made
+    b. where was it made
+    c. when was it made
+    d. how the expense is made.
+    e. And any other details you feel are relevant from a user perspective
+2. As a user, I should be able to record a due amount with details such as
+    a. Whom do I owe the amount
+    b. How much do I owe
+    c. Date by when I need to pay the amount (repayment date)
+    d. And any other details you feel are relevant from a user perspective.
+3. As a user, I should be able to settle the dues by paying the amount. There can be different
+algorithms to settle the due amounts.
+    a. First in first out - the due added first will be paid first
+    b. Latest repayment date first - the due that is nearest will be paid first
+    c. Or there can be any other logic that can come at a later point in time.

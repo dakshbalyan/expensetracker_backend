@@ -1,0 +1,33 @@
+Design Decisions (HisaabBook) Project Idea -> Money Tracker and your Hisaab excel sheet Tracker
+1. Entities
+    a. Expenses - Amount (int), Category (int), Location (String),
+                  DateTime (Date and Time), Payment Channel (Int),
+                  Remarks (String), AccountId (Int)
+    b. Dues - Payee (AccountId), Payer (AccountId), PaymentChannel (Int)
+              Amount Owed (Int), Due Date (Date), Repayment Date (Date)
+    c. Account - Total Amount(int), CreatedAt (Date), LastModified (DateAndTime)
+                 UserId, List<Expenses>, List<Dues>, List<Transactions>
+    d. User - Name (String), Age (int), UserId (Auto), PhoneNumber (String)
+    e. Transactions - Debit (int), Credit(int), Total Amount(int),
+                      AccountId, Payment Channel (Int)
+2. Enums
+    a. Category
+    b. Payment Channel
+
+3. APIs
+    1. getCategoryList                      GET
+    2. addCategory                          POST
+    3. getPaymentChannelList                GET
+    4. getExpensesByAccount                 Should we GET or POST
+    5. getDuesByAccount                     Should we GET or POST
+    6. getUserList                          GET
+    7. getAccountByUser                     Should we GET or POST
+    8. settleDues/param or reqBody ()       POST
+    9. deleteAccountByUser                  DELETE
+    10. deleteUser                          DELETE
+
+Features to be implemented :
+1. Track expense and dues
+2. Settle dues either by -> First in first out or Earliest repayment date first
+
+Database -> H2 in memory or MySQL or CSV files so that they can be loaded to Excel sheet too
