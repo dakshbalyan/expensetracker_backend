@@ -3,6 +3,7 @@ package com.personal.expensetracker.entity;
 import java.time.LocalDateTime;
 
 public class Expense {
+    private int expenseIndex;
     private int expenseAmt;
     private int expenseCategory;
     private String expenseLocation;
