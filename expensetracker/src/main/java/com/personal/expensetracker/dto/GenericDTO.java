@@ -1,6 +1,6 @@
 package com.personal.expensetracker.dto;
 
-public class GenericDTO {
+public class AccountDTO {
     private int accountId;
     private Object data;
 }

@@ -16,3 +16,14 @@ algorithms to settle the due amounts.
     a. First in first out - the due added first will be paid first
     b. Latest repayment date first - the due that is nearest will be paid first
     c. Or there can be any other logic that can come at a later point in time.
+
+Expectation:
+We would like you to build a simple microservice using the Spring Boot framework and create
+APIs to satisfy the above requirements.
+- Create a git repository and add this project
+- Commit your code at regular intervals so that we can understand the thought process.
+- Please use starter template to create project https://start.spring.io/
+- Feel free to come up with API contracts.
+- Feel free to use any database which you feel would be right for this problem statement.
+- We expect clean code along with good use of design patterns
+- Please provide a readme file on how to run the project and any setup instructions.
